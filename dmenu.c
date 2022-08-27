@@ -84,7 +84,8 @@ arrayhas(char **list, int length, char *item) {
 	for (int i = 0; i < length; i++) {
 		int len1 = strlen(list[i]);
 		int len2 = strlen(item);
-		if (fstrncmp(list[i], item, len1 > len2 ? len2 : len1) == 0)
+		if (len1 != len2) continue;
+		if (fstrncmp(list[i], item, len1) == 0)
 			return 1;
 	}
 	return 0;
