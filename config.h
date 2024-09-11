@@ -6,6 +6,7 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 static const char *fonts[] = {
 	"Berkeley Mono:size=9",
 	"JetBrains Mono:size=9",
+	"JoyPixels:size=9", /* colour emoji */
 	"Noto Color Emoji:size=9", /* colour emoji */
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
